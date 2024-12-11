@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Personal Portfolio</title>
+    	<link rel="stylesheet" href="style.css">
+    	<script src="https://kit.fontawesome.com/0ff319aedc.js" crossorigin="anonymous"></script>
+	</head>
+<body>
+	<div id="header">
+    	<div class="container">
+        	<nav>
+              <img src="images/logo.png" class="logo">
+            	<ul id="sidemenu">
+                	<li><a href="#header">Home</a></li>
+                	<li><a href="#about">About</a></li>
+                	<li><a href="#services">Services</a></li>
+                	<li><a href="#Portfolio">Portfolio</a></li>
+                	<li><a href="#Contact">Contact</a></li>
+					<i class="fas fa-times" onclick="closemenu()"></i>
+            	</ul>
+				<i class="fas fa-bars"onclick="openmenu()"></i>
+        	</nav>
+        	<div class="header-text">
+            <p>FRONTEND DEVELOPER</p>
+            <h1>Hi, I'm <span>KARRI DURGAPRASAD</span> <br>From INDIA</h1>
+        	</div>
+    	</div>
+	</div>
+<!----------about----------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+             <!--<img src="images/user.png" alt="user"> -->   
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I'm  KARRI DURGA PRASAD,a FRONT END DEVELOPER with a passion for WEB DESIGNER.
+					 Throughout my career,
+					 I have honed my skills in HTML,CSS,JAVASCRIPT,REACT.Js.</p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Education</p>
+                        <p class="tab-links"onclick="opentab('education')">Certification</p> 
+                        
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML,CSS,BOOTSTRAP,JAVASCRIPT,REACT.JS<br></li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2017</span><br>SSC<br></li>
+                            <li><span>2020</span><br>Intermediate<br></li>
+                            <li><span>2024</span><br>Btech in Computer science and engineering<br></li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX DEVELOPER</span><br>Tech Mahindra Smart Academy, Visakhapatnam.<br></li>
+                        </ul>
+                     </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-------------services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-html5"></i>
+				<i class="fa-brands fa-css3-alt"></i>
+				<i class="fab fa-bootstrap"></i>
+                <h2>HTML & CSS & BOOTSTRAP</h2>
+				<p>
+					HTML structures the content of a webpage, while CSS styles it. Bootstrap is a framework that makes building responsive websites easier.
+				</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+				<i class="fab fa-js"></i>
+                <h2>JAVASCRIPT</h2>
+				<p>JavaScript is a programming language used to create interactive effects within web browsers. It enables dynamic content like form validation, animations, and user interactions on webpages.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-react"></i>
+                <h2>REACT.Js</h2>
+				<p>React.js is a JavaScript library used to build user interfaces, particularly for single-page applications. It allows developers to create reusable UI components for faster and more efficient development.</p>
+                    <a href="#">Learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!----------------portfolio------------>
+<div id="Portfolio">
+	<div class="container">
+		<h1 class="sub-title">My Work</h1>
+		<div class="work-list">
+		<div class="work">
+				<img src="images/Myportfolio.1.avif">
+		<!---<div class="layer">
+					<h3>Social Media App</h3>
+					<p>The app connects you to the talented people around the world.
+						download it from the playstore.</p>
+					 <a href="#"><i class="fas fa-external-link-alt"> </i></a> 
+					 <button >Preview</button>
+					 <button >Source Code</button>
+				</div>  -->
+				<div class="layer">
+					<h2>HTML,CSS,BOOTSTRAP</h2>
+					
+					<!-- <a href="#"><i class="fas fa-external-link-alt"> </i></a> -->
+					<button class="btn-preview" onclick="sum()">Preview</button>
+					<button class="btn-source" onclick="sum2()">Source Code</button>
+				</div>
+				
+			</div>
+		
+			<div class="work">
+				<img src="images/Myportfolio.2.avif">
+				<div class="layer">
+					<h2>JAVASCRIPT</h2>
+					
+					<!-- <a href="#"><i class="fas fa-external-link-alt"> </i></a> -->
+					<button class="btn-preview" onclick="get()">Preview</button>
+					<button class="btn-source" onclick="get2()">Source Code</button>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/Myportfolio.3.avif" height="400PX">
+				<div class="layer">
+					<h2>REACT.Js</h2>
+					
+					<!-- <a href="#"><i class="fas fa-external-link-alt"> </i></a> -->
+					<button class="btn-preview">Preview</button>
+					<button class="btn-source">Source Code</button>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="btn">see more</a>
+	</div>
+</div>
+<!----------------contact------------>
+<div id="Contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Contct Me</h1>
+				<p><i class="fas fa-paper-plane"></i>prasadkka2002@gmail.com</p>
+				<p><i class="fas fa-phone-square-alt"></i>9391466250</p>
+				<div class="social-icons">
+					<a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+					<a href=""><i class="fab fa-twitter-square"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+					<a href=""><i class="fab fa-linkedin"></i></a>
+				</div>
+				<a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+			</div>	
+			<div class="contact-right">
+				<form name="submit-to-google-sheet">
+					<input type="text" name="Name" placeholder="your Name"required>
+					<input type="email" name="Email" placeholder="Your Email" required>
+					<textarea name="Message" rows="6"placeholder="Your Message"></textarea>
+					<button type="submit" class="btn btn2"> Submit </button>
+				</form>
+				<span id="msg">Hello</span>
+			</div> 
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright DURGA$<i class="fas fa-heart"></i></p>
+	</div>
+</div>
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+<script>
+
+	var sidemenu= document.getElementById("sidemenu")
+
+	function openmenu(){
+		sidemenu.style.right="0";
+
+	}
+	function closemenu(){
+		sidemenu.style.right="-200px";
+		
+	}
+	function sum(){
+		location.href = 'https://karri-durgaprasad.github.io/Html-css/'
+	}
+	function sum2(){
+		location.href = 'https://github.com/karri-durgaprasad/Html-css.git'
+	}
+	function get(){
+		location.href = 'https://karri-durgaprasad.github.io/My-JS/'
+	}
+	function get2(){
+		location.href = 'https://github.com/karri-durgaprasad/My-JS.git'
+	}
+</script>
+<script>
+	const scriptURL = '<https://script.google.com/macros/s/AKfycbxSV0vW0OIz0PyzsJDH-2Aln1di5xxYDuHE5nhizGYN_oRglljFimffl1HK6Vmh1plK/exec>'
+	const form = document.forms['submit-to-google-sheet']
+  
+	form.addEventListener('submit', e => {
+	  e.preventDefault()
+	  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => {
+			msg.inneerHTML="Message sent successfully"
+			serTimeout(function(){
+			msg.innerHTML =""
+		},5000)
+		form.reset()
+		.catch(error => console.error('Error!', error.message))
+	}) })
+  </script>
+    
+</body>
+</html>
